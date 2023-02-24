@@ -14,7 +14,7 @@ public abstract class BaseHero implements BaseInterface {
         BaseHero.r = new Random();
     }
 
-    protected String name;
+    public String name;
     protected int maxHp;
     public int hp;
     protected int attack;
@@ -80,12 +80,12 @@ public abstract class BaseHero implements BaseInterface {
         int max = 101;
         int index = -1;
         for (int i = 0; i < teamList.size(); i++) {
-            if (teamList.get(i).hp != 0) {
+//            if (teamList.get(i).hp != 0) {
                 if (teamList.get(i).getInfo() < max) {
                     max = teamList.get(i).getInfo();
                     index = i;
                 }
-            }
+//            }
         }
         return index;
     }

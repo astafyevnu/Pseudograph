@@ -6,7 +6,7 @@ public class Main {
     public static ArrayList<BaseHero> whiteSide;
     public static ArrayList<BaseHero> blackSide;
     public static Scanner input = new Scanner(System.in);
-    public static final int GANG_SIZE = 5;
+    public static final int GANG_SIZE = 9;
 
     public static void main(String[] args) {
         init();
